@@ -16,15 +16,23 @@
     <h1 class="text-center">Formulário</h1>
     <br />
 
-    <form class="container col-md-3 mx-auto">
+    <form class="container col-md-3 mx-auto" id="myForm" novalidate>
       <div class="mb-3">
         <label for="inputEmail" class="form-label">Email</label>
         <input type="email" class="form-control" id="inputEmail" required />
+        <div class="valid-feedback">Email válido!</div>
+        <div class="invalid-feedback" id="emailFeedback">
+          Por favor insira um email válido.
+        </div>
       </div>
 
       <div class="mb-3">
         <label for="inputAssunto" class="form-label">Assunto</label>
         <input type="text" class="form-control" id="inputAssunto" required />
+        <div class="valid-feedback">Assunto válido!</div>
+        <div class="invalid-feedback" id="assuntoFeedback">
+          O assunto deve ter pelo menos 3 caracteres.
+        </div>
       </div>
 
       <div class="mb-3">
@@ -35,6 +43,10 @@
           rows="3"
           required
         ></textarea>
+        <div class="valid-feedback">Mensagem válida!</div>
+        <div class="invalid-feedback" id="mensagemFeedback">
+          A mensagem deve ter pelo menos 10 caracteres.
+        </div>
       </div>
 
       <div class="d-flex justify-content-center gap-2">
@@ -42,6 +54,8 @@
         <button type="reset" class="btn btn-secondary">Cancelar</button>
       </div>
     </form>
+
+    <script></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -1,0 +1,11 @@
+André Carvalho - 115397
+
+
+ponto 2:
+/home/runner/Teste04
+
+
+ponto 4:
+git add .
+git commit -m "4ª tarefa concluída
+git push origin main
